@@ -1,72 +1,108 @@
-<!DOCTYPE html><html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Encriptador de Textos</title>
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="shortcut icon" href="imagens/x-icon.png" type="image/png"/>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="shortcut icon" href="imagens/x-icon.png" type="image/png" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header>
-        <div class="logo" >
-            <a href="https://www.alura.com.br/" target="_blank"><img src="imagens/alura_logo.png" alt="Logo da Alura"></a>
-        </div>
+      <div class="logo">
+        <a href="https://www.alura.com.br/" target="_blank"
+          ><img src="imagens/alura_logo.png" alt="Logo da Alura"
+        /></a>
+      </div>
     </header>
 
     <div class="main">
-       
-       <div class="codificar">
-            <textarea cols="10" name=" " id="txt-in" placeholder="Digite aqui seu texto..."></textarea>
-            <div class="info">
-                <img src="imagens/exclamacao.svg" alt="ponto de exclamação" width="12px" ><p >Apenas letras minúsculas e sem acento.</p>
-            </div>
-            <div class="botoes">
-                <button class="botao botaocriptador">Criptografar</button>
-                <button class="botao botaodescriptador">Descriptografar</button>
-            </div>
+      <div class="codificar">
+        <textarea
+          cols="10"
+          name=" "
+          id="txt-in"
+          placeholder="Digite aqui seu texto..."
+        ></textarea>
+        <div class="info">
+          <img
+            src="imagens/exclamacao.svg"
+            alt="ponto de exclamação"
+            width="12px"
+          />
+          <p>Apenas letras minúsculas e sem acento.</p>
         </div>
+        <div class="botoes">
+          <button class="botao botaocriptador">Criptografar</button>
+          <button class="botao botaodescriptador">Descriptografar</button>
+        </div>
+      </div>
     </div>
 
+    <div id="decodificar">
+      <img
+        class="icone"
+        id="icone"
+        src="imagens/img1.png"
+        alt="imagem-ilustrativa"
+      />
 
-        <div id="decodificar">
-            <img class="icone" id="icone" src="imagens/img1.png" alt="imagem-ilustrativa">
-            
-            <h2 id="none">Nenhuma mensagem encontrada</h2>
-            
-            <textarea cols="10" readonly name=" " id="txt-out" placeholder="Digite ao lado um texto que você deseja criptografar ou descriptografar"></textarea>
-    
-            <h3 id="msg"></h3>
+      <h2 id="none">Nenhuma mensagem encontrada</h2>
 
-            <div id="copiar"></div>
-        </div> 
+      <textarea
+        cols="10"
+        readonly
+        name=" "
+        id="txt-out"
+        placeholder="Digite ao lado um texto que você deseja criptografar ou descriptografar"
+      ></textarea>
+
+      <h3 id="msg"></h3>
+
+      <div id="copiar"></div>
+    </div>
 
     <footer class="rodape">
+      <p>
+        &#169;<a
+          href="https://www.linkedin.com/in/lindainesvicente/"
+          rel=""
+          target="_blank"
+          >Linda Inês Vicente</a
+        >
+      </p>
 
-        <p>&#169;<a href="https://www.linkedin.com/in/lindainesvicente/" rel="" target="_blank">Linda Inês Vicente</a></p>
-            
+      <div class="">
+        <a href="https://github.com/lindainesv"
+          ><img src="imagens/github-logo.png" alt="github icone" width="30px" />
+        </a>
+
+        <a href="https://www.linkedin.com/in/lindainesvicente/"
+          ><img
+            src="imagens/linkedin-logo.png"
+            alt="linkedin icone"
+            width="33px"
+          />
+        </a>
+
         <div class="">
-            <a href="https://github.com/lindainesv"><img src="imagens/github-logo.png" alt="github icone" width="30px">
-            </a>
-                
-            <a href="https://www.linkedin.com/in/lindainesvicente/"><img src="imagens/linkedin-logo.png"alt="linkedin icone" width="33px">
-            </a>
-
-            <div class=""><small>por:
-                <a href="https://www.alura.com.br/" target="_blank"> Alura</a> 
-                & 
-                <a href="https://www.oracle.com/br/education/oracle-next-education/" target="_blank">Oracle - ONE</a></small>
+          <small
+            >por:
+            <a href="https://www.alura.com.br/" target="_blank"> Alura</a>
+            &
+            <a
+              href="https://www.oracle.com/br/education/oracle-next-education/"
+              target="_blank"
+              >Oracle - ONE</a
+            ></small
+          >
         </div>
-        </div>  
-
+      </div>
     </footer>
 
-        <script src="scripts/main.js"></script>
-
-    </body>
-
+    <script src="scripts/main.js"></script>
+  </body>
 </html>
-           
