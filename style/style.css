@@ -55,8 +55,13 @@ textarea {
 .info {
   display: flex;
   flex-direction: row;
-  margin: 0 0 5px 0;
   align-items: center;
+  padding: 0px;
+  position: absolute;
+  width: auto;
+  height: 18px;
+  left: 13%;
+  top: 651px;
 }
 
 .info p {
@@ -128,6 +133,7 @@ textarea {
   color: white;
   filter: drop-shadow(2px 4px 2px #00000025);
 }
+
 .botaocriptador:active {
   box-shadow: none;
 }
@@ -197,8 +203,8 @@ textarea {
 }
 
 .icone {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
 }
 
 .imagem {
@@ -230,7 +236,7 @@ textarea {
   color: #0a3871;
   height: 3.5rem;
   width: 100%;
-  bottom: 0px;
+  bottom: -70px;
 }
 
 .rodape a {
@@ -249,78 +255,115 @@ h3 {
   font-size: 18px;
 }
 
-/* RESOLUÇÕES  */
-/*Tablet*/
-@media (max-width: 768px) {
-  body {
-    flex-direction: column;
-    background: #f3f5fc;
-  }
-  #txt-out {
-    font-size: 20px;
-    text-align: center;
-    height: 20vh;
-  }
-  #txt-out::placeholder {
-    font-size: 20px;
-    text-align: center;
-  }
-  #decodificar {
-    width: 92vw;
-    height: 92vw;
-    margin-bottom: 15px;
-  }
-  .imagem {
-    width: 100%;
-  }
-  .logo {
-    margin: 40px 0 80px 30px;
-  }
-  .logo:hover {
-    margin: 30px 0 0 20px;
-    animation: expandir 1s;
-  }
-  .rodape {
-    position: relative;
-    text-align: center;
-    bottom: 0;
-  }
-}
+
+
+
+
+
 
 /*Celular*/
-@media (max-width: 375px) {
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
   body {
     flex-direction: column;
-    background: #f3f5fc;
+    background: #e5e5e5;
   }
-  #txt-area2 {
-    font-size: 16px;
-    height: 100px;
-    margin: 0 0 15px;
+
+  textarea {
+    color: #0a3871;
+    font-size: 3px;
+    border: none;
+    background-color: transparent;
+    width: 300px;
+    font-size: 300px;
+    color: #0a3871;
+    resize: none;
   }
-  #txt-area2::placeholder {
-    font-size: 18px;
+
+  #txt-in {
+    position: absolute;
+    width: 343px;
+    height: 480px;
+    top: 152px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0a3871;
   }
-  #decodificar {
-    margin: 30px 53px 20px;
-    padding: 0;
-    margin-bottom: 15px;
+  #txt-in::placeholder {
+    font-size: 32px;
   }
-  .imagem {
-    width: 50%;
-    margin: -40px;
-  }
+
   .logo {
-    margin: 30px 0 90px 0;
+    position: absolute;
+    width: 375px;
+    height: 96px;
+    left: 40px;
   }
-  .logo:hover {
-    margin: 30px 0 0 20px;
-    animation: expandir 1s;
-  }
-  .rodape {
+
+
+  #txt-out {
+    background-color: #fff;
+    margin: 3px 2px 1px 2px;
+    color: #0a3871;
+    font-size: 32px;
     text-align: center;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
+    color: #495057;
+    text-transform: lowercase;
   }
+  
+  #txt-out::placeholder {
+    color: #0a3871;
+    font-size: 20px;
+    text-align: center;
+    color: #495057;
+  }
+
+ #decodificar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+    gap: 3px;
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    top: 550px;
+    background: #ffffff;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+  }
+  
+  .info {
+    left: 5.3rem;
+    top: 30rem
+  }
+
+  .imagem {
+    width: 33px;
+    height: 30px;
+  }
+
+  .botoes {
+    display: flex;
+    flex-direction: row ;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 24px;
+    position: absolute;
+    width: 400px;
+    height: 1px;
+    top: 350px;
+  }
+
+  .botaocriptador,.botaodescriptador{
+    width: 300px;
+    height: 65px;
+    margin: 0.5rem;
+  }
+
+.rodape{
+bottom: -500px;
+}
+
 }
